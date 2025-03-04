@@ -1,0 +1,31 @@
+site_name: SiteWorks API Documentation
+nav:
+  - Home: index.md
+  - About:
+      - Product: about/product.md
+      - License: about/license.md
+      - Company: about/company.md
+      - Documentation project: about/project.md
+  - API Docs:
+      - API Authentication: api-docs/api-authentication.md
+      - Swagger API Endpoints: api-docs/api-endpoints.md
+      - API FAQ: api-docs/api-faq.md
+  - Product Docs:
+      - API Features: product-docs/api-features.md
+      - API Use Cases: product-docs/api-use-cases.md
+      - Changelog: product-docs/changelog.md
+      - Roadmap: product-docs/roadmap.md
+  - System Docs:
+      - API Architecture: system-docs/api-architecture.md
+      - API Tech Stack: system-docs/api-tech-stack.md
+  - Annex:
+      - Glossary references: annex/glossary-references.md
+theme:
+  name: readthedocs
+  user_color_mode_toggle: true
+  locale: en
+  logo: images/logo.png
+plugins:
+  - swagger-ui-tag
+  - search
+  - mermaid2
