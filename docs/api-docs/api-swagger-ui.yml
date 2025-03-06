@@ -50,6 +50,8 @@ paths:
     get:
       summary: Get a list of workers
       description: Retrieve all registered workers in the system.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: A list of workers.
@@ -60,16 +62,56 @@ paths:
     post:
       summary: Register a new worker
       description: Add a new worker to the system.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Worker created successfully.
         "400":
           description: Bad request, invalid data.
+  /workers/{worker_id}:
+    patch:
+      summary: Update worker details
+      description: Partially update a worker's details (e.g., role, status).
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: worker_id
+          in: path
+          required: true
+          description: The ID of the worker to update.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: string
+                  description: New role of the worker.
+                status:
+                  type: string
+                  enum: [active, inactive]
+                  description: The status of the worker.
+      responses:
+        "200":
+          description: Worker updated successfully.
+        "400":
+          description: Invalid request format.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: Worker not found.
 
   /teams:
     get:
       summary: Get construction teams
       description: Retrieve a list of teams assigned to various construction sites.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: List of teams.
@@ -80,6 +122,8 @@ paths:
     post:
       summary: Create a new team
       description: Register a new construction team.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Team created successfully.
@@ -90,6 +134,8 @@ paths:
     get:
       summary: Get construction projects
       description: Retrieve details of all active and past construction projects.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: List of projects.
@@ -100,16 +146,79 @@ paths:
     post:
       summary: Create a new project
       description: Register a new construction project.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Project created successfully.
         "400":
           description: Bad request, invalid data.
 
+  /projects/{project_id}:
+    patch:
+      summary: Update project details
+      description: Partially update a project's details (e.g., status, deadline).
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: project_id
+          in: path
+          required: true
+          description: The ID of the project to update.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  enum: [planned, in_progress, completed, delayed]
+                  description: New status of the project.
+                deadline:
+                  type: string
+                  format: date
+                  description: Updated deadline of the project.
+      responses:
+        "200":
+          description: Project updated successfully.
+        "400":
+          description: Invalid request format.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: Project not found.
+
+  /projects/{project_id}/progress:
+    get:
+      summary: Get project progress updates
+      description: Retrieve progress updates for a specific construction project.
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: project_id
+          in: path
+          required: true
+          description: ID of the project
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Project progress details.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: Project not found.
+
   /materials:
     get:
       summary: Get construction materials
       description: Retrieve a list of materials used in construction sites.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: List of materials.
@@ -120,16 +229,56 @@ paths:
     post:
       summary: Add new material
       description: Register a new construction material.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Material added successfully.
         "400":
           description: Bad request, invalid data.
+  /materials/{material_id}:
+    patch:
+      summary: Update material details
+      description: Modify the stock level or specifications of a construction material.
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: material_id
+          in: path
+          required: true
+          description: The ID of the material to update.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stock_level:
+                  type: integer
+                  description: Updated stock quantity.
+                unit_price:
+                  type: number
+                  format: float
+                  description: Updated unit price of the material.
+      responses:
+        "200":
+          description: Material updated successfully.
+        "400":
+          description: Invalid request format.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: Material not found.
 
   /subcontractors:
     get:
       summary: Get subcontractors
       description: Retrieve a list of subcontractors working with SiteWorks projects.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: List of subcontractors.
@@ -140,16 +289,60 @@ paths:
     post:
       summary: Register a subcontractor
       description: Add a new subcontractor to the system.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Subcontractor registered successfully.
         "400":
           description: Bad request, invalid data.
 
+  /subcontractors/{subcontractor_id}:
+    patch:
+      summary: Update subcontractor details
+      description: Update the contract status or rating of a subcontractor.
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: subcontractor_id
+          in: path
+          required: true
+          description: The ID of the subcontractor to update.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                contract_status:
+                  type: string
+                  enum: [active, terminated]
+                  description: The new contract status.
+                rating:
+                  type: number
+                  format: float
+                  minimum: 0
+                  maximum: 5
+                  description: Subcontractor rating (0-5).
+      responses:
+        "200":
+          description: Subcontractor updated successfully.
+        "400":
+          description: Invalid request format.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: Subcontractor not found.
+
   /clients:
     get:
       summary: Get clients
       description: Retrieve a list of clients associated with SiteWorks projects.
+      security:
+        - BearerAuth: []
       responses:
         "200":
           description: List of clients.
@@ -160,11 +353,39 @@ paths:
     post:
       summary: Register a client
       description: Add a new client to the system.
+      security:
+        - BearerAuth: []
       responses:
         "201":
           description: Client registered successfully.
         "400":
           description: Bad request, invalid data.
+
+  /notifications/webhooks:
+    post:
+      summary: Set up webhooks for real-time updates
+      description: Register a webhook to receive real-time notifications about project updates.
+      security:
+        - BearerAuth: []
+      responses:
+        "201":
+          description: Webhook registered successfully.
+        "400":
+          description: Bad request, invalid data.
+
+  /reports/daily-summary:
+    get:
+      summary: Get daily project summary reports
+      description: Retrieve a daily summary report of all projects.
+      security:
+        - BearerAuth: []
+      responses:
+        "200":
+          description: Daily report generated.
+        "401":
+          description: Unauthorized.
+        "404":
+          description: No reports available.
 
 components:
   securitySchemes:

@@ -13,8 +13,9 @@ nav:
   - Product Docs:
       - API Features: product-docs/api-features.md
       - API Use Cases: product-docs/api-use-cases.md
-      - Changelog: product-docs/changelog.md
       - Roadmap: product-docs/roadmap.md
+      - Release Notes: product-docs/release-notes.md
+      - Changelog: product-docs/changelog.md
   - System Docs:
       - API Architecture: system-docs/api-architecture.md
       - API Tech Stack: system-docs/api-tech-stack.md

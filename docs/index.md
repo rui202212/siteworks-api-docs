@@ -1,8 +1,8 @@
-# Welcome to SiteWorks API documentation! 🏗️
+# Welcome to SiteWorks API documentation!
 
 ## Introduction
 
-Welcome to the official documentation for SiteWorks API! We are excited to introduce this powerful tool designed to revolutionize construction site management.
+Welcome to the official documentation for SiteWorks API! We are excited to introduce this powerful tool designed to revolutionize construction site management. 🏗️
 
 ## About SiteWorks Management
 

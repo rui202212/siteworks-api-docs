@@ -79,6 +79,7 @@ gantt
 ---  
 ## Future Enhancements
 - **Mobile SDKs** for third-party developers.
+- **IoT Integration** for connecting sensors to monitor equipment and worker safty.
 - **AI-powered analytics** for project tracking.
 - **Multi-language support** for global users.
 
