@@ -25,3 +25,7 @@
 
 - Core features: Workers, Teams, Projects, Materials, Subcontractors.
 - Authentication via OAuth 2.0.
+
+---  
+
+_Last update : 2025-03-08_

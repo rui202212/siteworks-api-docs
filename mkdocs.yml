@@ -1,18 +1,19 @@
 site_name: SiteWorks API Documentation
 nav:
   - Home: index.md
-  - About:
-      - Product: about/product.md
-      - License: about/license.md
-      - Company: about/company.md
-      - Documentation project: about/project.md
+  - Introduction:
+      - What is SiteWorks API?: introduction/product.md
+      - Licensing Model: introduction/license.md
+      - About our ompany: introduction/company.md
+      - Documentation project: introduction/project.md
   - API Docs:
       - API Authentication: api-docs/api-authentication.md
-      - Swagger API Endpoints: api-docs/api-endpoints.md
-      - API FAQ: api-docs/api-faq.md
-  - Product Docs:
-      - API Features: product-docs/api-features.md
-      - API Use Cases: product-docs/api-use-cases.md
+      - API Endpoints Swagger: api-docs/api-endpoints.md
+      - API Features: api-docs/api-features.md
+      - Use Cases: api-docs/api-use-cases.md
+      - Error Handling: api-docs/error-handling.md
+      - FAQ: api-docs/api-faq.md
+  - Developer Guide:
       - Roadmap: product-docs/roadmap.md
       - Release Notes: product-docs/release-notes.md
       - Changelog: product-docs/changelog.md
