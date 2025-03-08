@@ -1,28 +1,94 @@
-site_name: SiteWorks API Docs
-nav:
+# SiteWorks API Architecture
 
-- Home: index.md
-- API Docs:
-  - API Authentication: api-docs/api-authentication.md
-  - Swagger API Endpoints: api-docs/api-endpoints.md
-  - API FAQ: api-docs/api-faq.md
-- Product Docs:
-  - API Features: product-docs/api-features.md
-  - API Use Cases: product-docs/api-use-cases.md
-  - Changelog: product-docs/changelog.md
-  - Roadmap Overview: product-docs/roadmap-overview.md
-- System Docs:
-  - API Architecture: system-docs/api-architecture.md
-  - API Tech Stack: system-docs/api-teck-stack.md
-- Annex:
-  - Glossary references: annex/glossary-references.md
-- About: - About: about/about.md - License: about/license.md
-  theme:
-  name: mkdocs
-  user_color_mode_toggle: true
-  locale: en
-  logo: images/logo.jpeg
-  plugins:
-- swagger-ui-tag
-- search
-- mermaid2
+```puml
+@startuml
+skinparam backgroundColor white
+skinparam componentStyle rectangle
+skinparam shadowing false
+
+skinparam defaultFontColor black
+skinparam component {
+    BackgroundColor LightBlue
+    BorderColor DarkBlue
+}
+skinparam queue {
+    BackgroundColor LightGrey
+    BorderColor Black
+}
+skinparam database {
+    BackgroundColor LightYellow
+    BorderColor DarkRed
+}
+skinparam cloud {
+    BackgroundColor LightGreen
+    BorderColor DarkGreen
+}
+skinparam actor {
+    BackgroundColor White
+    BorderColor Black
+}
+
+title SiteWorks API Architecture
+
+'=== Cluster des utilisateurs
+rectangle "Users" as Users #lightgrey {
+    actor Worker as W #Yellow
+    actor "Team Manager" as TM #Blue
+    actor "Site Manager" as SM
+}
+
+'=== Security & Load Balancer
+rectangle "Security & Load Balancer" as Security #LightPink {
+    cloud "Web Application Firewall\n(WAF)" as WAF #red
+    cloud "NGINX Load Balancer" as LB #orange
+}
+
+'=== Kubernetes Cluster
+rectangle "Kubernetes Cluster" as Kubernetes #LightBlue {
+
+    '=== Backend Services
+    rectangle "Backend Services" as Backend #lightblue {
+        [Auth Service] as Auth
+        [Project Service] as Project
+        [Worker Service] as WorkerService
+        [Material Service] as Material
+    }
+
+    '=== Data Layer
+    database "PostgreSQL" as DB #yellow
+    storage "Persistent Storage" as Storage #gray
+
+    '=== Message Queue
+    queue "Apache Kafka" as Kafka #lightgray
+}
+
+'=== Monitoring & Logging
+rectangle "Monitoring & Logging" as Monitoring #lightgreen {
+    [Prometheus (Monitoring)] as Prometheus
+    [Grafana (Dashboard)] as Grafana
+    cloud "ELK Logging" as ELK #darkgreen
+}
+
+'=== CI/CD Pipeline & IAM
+rectangle "CI/CD & IAM" as CICD #lightyellow {
+    component "GitHub Actions\n(CI/CD Pipeline)" as GitHubActions
+    component "OAuth 2.0 & JWT" as IAM
+}
+
+'=== Connexions entre les composants
+W --> WAF
+TM --> WAF
+SM --> WAF
+WAF --> LB
+LB --> Backend
+
+Backend --> DB
+Backend --> Storage
+Backend --> Kafka
+Backend --> Prometheus
+Backend --> ELK
+
+GitHubActions --> Backend
+IAM --> WAF
+@enduml
+```

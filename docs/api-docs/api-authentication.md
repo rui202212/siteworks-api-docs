@@ -137,4 +137,4 @@ Authorization: Bearer your-jwt-token
 - **Rotate API keys and tokens periodically**.
 - **Implement refresh tokens** for long-lived sessions.
 
-For further details, refer to [SiteWorks API Documentation](../index.md) or contact support at [**support@siteworks.com**](mailto:support@siteworks.com).
+For further details, refer to [SiteWorks API Documentation](../index.md) or contact support at [support@siteworks.com](mailto:support@siteworks.com).

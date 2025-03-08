@@ -56,7 +56,7 @@ This method allows greater flexibility but requires clients to manage headers co
 
 When an API version is deprecated:
 
-- **Advanced Notice:** A deprecation announcement will be made in the [Release Notes](../product-docs/release-notes.md).
+- **Advanced Notice:** A deprecation announcement will be made in the [Release Notes](release-notes.md).
 - **Deprecation Period:** Old versions remain functional for a period before retirement.
 - **Deprecation Warnings:** Clients using deprecated versions may receive warnings in API responses.
 

@@ -19,9 +19,10 @@ The key objectives of this documentation project are:
 
 The documentation is divided into several sections to ensure logical navigation:
 
-- **Introduction**: Overview of the SiteWorks API, licensing, and company background.
-- **API Docs**: Authentication, endpoint reference, use cases, and frequently asked questions (FAQ).
-- **Developer Guide**: Roadmap, release notes, changelog, and technical architecture.
+- **Introduction**: Overview of the SiteWorks API and this documentation, licensing, and company background.
+- **API Docs**: Authentication, endpoint reference, error handling, and frequently asked questions (FAQ).
+- **Product Docs**: Features, use cases, release notes, changelog, and versionning.
+- **System Docs**: Roadmap, technical stack and architecture.
 - **Resources**: Glossary and references for additional technical information.
 
 Each section is designed to be **developer-centric**, offering practical insights, examples, and best practices to accelerate integration and troubleshooting.
@@ -59,6 +60,6 @@ Stay updated by checking the [**Release Notes**](../product-docs/release-notes.m
 
 **If you have suggestions, feel free to reach out—we’re building this documentation for you!**
 
----  
+---
 
 _Last update : 2025-03-08_

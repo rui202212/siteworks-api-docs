@@ -70,7 +70,7 @@ The **SiteWorks API** is designed to streamline construction project management,
 - **AI-powered Predictions**: Intelligent forecasting for project completion timelines.
 - **IoT Integration**: Connect with sensors to monitor equipment and worker safety.
 
-For more details, refer to our [Roadmap](../product-docs/roadmap.md).
+For more details, refer to our [Roadmap](../system-docs/roadmap.md).
 
 ---
 
