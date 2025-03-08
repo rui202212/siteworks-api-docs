@@ -1,5 +1,3 @@
-diagrams
-
 # Ignore Python virtual environment
 venv/
 .Venv/
