@@ -4,16 +4,18 @@ nav:
   - Introduction:
       - What is SiteWorks API?: introduction/product.md
       - Licensing Model: introduction/license.md
-      - About our ompany: introduction/company.md
+      - About our Company: introduction/company.md
       - Documentation project: introduction/project.md
   - API Docs:
       - API Authentication: api-docs/api-authentication.md
       - API Endpoints Swagger UI: api-docs/api-endpoints.md
+      - API Sequence Diagrams: api-docs/api-sequence-diagrams.md
       - Error Handling: api-docs/error-handling.md
       - FAQ: api-docs/api-faq.md
   - Product Docs:
       - API Features: product-docs/api-features.md
       - Use Cases: product-docs/api-use-cases.md
+      - Sequence Diagrams: product-docs/sequence-diagrams.md
       - Release Notes: product-docs/release-notes.md
       - Changelog: product-docs/changelog.md
       - Versionning: product-docs/api-versionning.md
@@ -34,3 +36,6 @@ plugins:
   - mermaid2
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: uml
+      theme:
+        enabled: false

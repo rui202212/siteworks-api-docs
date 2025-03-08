@@ -1,6 +1,6 @@
 # SiteWorks API Architecture
 
-```puml
+```uml
 @startuml
 skinparam backgroundColor white
 skinparam componentStyle rectangle
@@ -35,6 +35,7 @@ rectangle "Users" as Users #lightgrey {
     actor Worker as W #Yellow
     actor "Team Manager" as TM #Blue
     actor "Site Manager" as SM
+    actor "HSE Manager" as HSE #Red
 }
 
 '=== Security & Load Balancer
@@ -79,6 +80,7 @@ rectangle "CI/CD & IAM" as CICD #lightyellow {
 W --> WAF
 TM --> WAF
 SM --> WAF
+HSE --> WAF
 WAF --> LB
 LB --> Backend
 

@@ -14,11 +14,11 @@ SiteWorks API is designed for construction companies, project managers, subcontr
 
 ### How do I authenticate with SiteWorks API?
 
-SiteWorks API uses **OAuth 2.0 with JWT authentication**. To make a request, you need to obtain an **access token** by sending your _client_id_ and _client_secret_ to the `/auth/token` endpoint.
+SiteWorks API uses **OAuth 2.0 with JWT authentication**. To make a request, you need to obtain an **access token** by sending your _**client_id**_ and _**client_secret**_ to the `/auth/token` endpoint.
 
 ### How can I get an API key?
 
-You can request an API key by signing up on our developer portal at [https://developers.siteworks.com](https://developers.siteworks.com). Once registered, you will receive your _client_id_ and _client_secret_.
+You can request an API key by signing up on our developer portal at [https://developers.siteworks.com](https://developers.siteworks.com). Once registered, you will receive your _**client_id**_ and _**client_secret**_.
 
 ### How do I use a JWT token in API requests?
 
@@ -30,7 +30,8 @@ Authorization: Bearer your-access-token
 
 ### What should I do if my token expires?
 
-Access tokens expire after a set period. When your token expires, request a new one using the `/auth/token` endpoint.
+Access tokens expire after a set period.  
+When your token expires, request a new one using the `/auth/token` endpoint.
 
 ### Can I revoke an access token?
 
@@ -48,7 +49,7 @@ Content-Type: application/json
 Authorization: Bearer your-access-token
 
 {
-  "name": "John Doe",
+  "name": "Nicola TESLA",
   "role": "Electrician",
   "team_id": 123
 }
@@ -72,7 +73,7 @@ Content-Type: application/json
 Authorization: Bearer your-access-token
 
 {
-  "name": "John Smith",
+  "name": "Zaha HADID",
   "role": "Supervisor"
 }
 ```
@@ -107,8 +108,8 @@ This usually indicates a problem on our end. Please try again later or contact s
 
 If you need further assistance, you can:
 
-- Visit our documentation at [**https://docs.siteworks.com**](https://docs.siteworks.com)
-- Email our support team at [**support@siteworks.com**](mailto:support@siteworks.com)
+- Visit our documentation at [https://docs.siteworks.com](../index.md)
+- Email our support team at [support@siteworks.com](mailto:support@siteworks.com)
 - Open a support ticket in our developer portal
 
 ---

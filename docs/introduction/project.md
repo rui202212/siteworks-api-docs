@@ -1,12 +1,12 @@
-# **SiteWorks API Documentation Project**
+# SiteWorks API Documentation Project
 
-## **Overview**
+## Overview
 
 The SiteWorks API Documentation project aims to provide a comprehensive, developer-friendly guide to using the SiteWorks API. Our goal is to ensure that developers, project managers, and technical teams can quickly understand how to integrate and utilize the API to manage construction projects, workers, teams, materials, and more.
 
 This documentation is structured to offer a seamless experience, covering authentication, endpoints, use cases, best practices, and system architecture.
 
-## **Objectives**
+## Objectives
 
 The key objectives of this documentation project are:
 
@@ -15,19 +15,19 @@ The key objectives of this documentation project are:
 - **Up-to-Date Information** – Ensure the documentation evolves with API updates and new releases.
 - **Developer-Focused** – Offer quickstart guides, FAQs, and real-world examples to simplify API integration.
 
-## **Structure of the Documentation**
+## Structure of the Documentation
 
 The documentation is divided into several sections to ensure logical navigation:
 
 - **Introduction**: Overview of the SiteWorks API and this documentation, licensing, and company background.
-- **API Docs**: Authentication, endpoint reference, error handling, and frequently asked questions (FAQ).
-- **Product Docs**: Features, use cases, release notes, changelog, and versionning.
+- **API Docs**: Authentication, endpoint reference, API interaction sequence diagrams, error handling, and frequently asked questions (FAQ).
+- **Product Docs**: Features, use cases, sequence diagrams, release notes, changelog, and versionning.
 - **System Docs**: Roadmap, technical stack and architecture.
 - **Resources**: Glossary and references for additional technical information.
 
 Each section is designed to be **developer-centric**, offering practical insights, examples, and best practices to accelerate integration and troubleshooting.
 
-## **Target Audience**
+## Target Audience
 
 This documentation is intended for:
 
@@ -36,7 +36,7 @@ This documentation is intended for:
 - **Technical Support Teams** assisting with API-related issues.
 - **Construction Industry Professionals** utilizing the SiteWorks platform for managing projects and teams.
 
-## **How to Contribute?**
+## How to Contribute?
 
 We encourage feedback and contributions from our users to improve the documentation. You can contribute by:
 
@@ -44,9 +44,9 @@ We encourage feedback and contributions from our users to improve the documentat
 - Suggesting improvements or additional examples.
 - Submitting pull requests if you find areas for enhancement.
 
-For contributions, please visit our [**GitHub repository**](https://github.com) or contact us at [**support@siteworks.com**](mailto:support@siteworks.com).
+For contributions, please visit our [GitHub repository](https://github.com/rui202212/siteworks-api-docs.git) or contact us at [support@siteworks.com](mailto:support@siteworks.com).
 
-## **Future Improvements**
+## Future Improvements
 
 We are continuously working on enhancing the documentation with:
 
@@ -54,7 +54,7 @@ We are continuously working on enhancing the documentation with:
 - More code samples and SDK integration guides.
 - Video tutorials and use case demonstrations.
 
-Stay updated by checking the [**Release Notes**](../product-docs/release-notes.md) and [**Changelog**](../product-docs/changelog.md) sections!
+Stay updated by checking the [Release Notes](../product-docs/release-notes.md) and [Changelog](../product-docs/changelog.md) sections!
 
 ---
 

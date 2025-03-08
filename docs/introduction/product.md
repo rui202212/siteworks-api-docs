@@ -21,4 +21,4 @@ SiteWorks API is a powerful and flexible solution designed to facilitate constru
 
 ---
 
-For more information, contact us at [**support@siteworks.com**](mailto:support@siteworks.com).
+For more information, contact us at [support@siteworks.com](mailto:support@siteworks.com).

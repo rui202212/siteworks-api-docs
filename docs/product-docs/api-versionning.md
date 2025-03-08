@@ -84,20 +84,20 @@ In **v1**, a worker’s role was stored under `job_title`:
 ```json
 {
   "id": 123,
-  "name": "John Doe",
+  "name": "Nicola TESLA",
   "job_title": "Electrician"
 }
-```
+```  
 
 In **v2**, it has been renamed to `role`:
 
 ```json
 {
   "id": 123,
-  "name": "John Doe",
+  "name": "Nicola TESLA",
   "role": "Electrician"
 }
-```
+```  
 
 **Migration Tip:** Update your client code to handle `role` instead of `job_title`.
 

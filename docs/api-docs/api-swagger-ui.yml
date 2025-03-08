@@ -6,7 +6,7 @@ info:
   contact:
     name: SiteWorks Support
     email: support@siteworks.com
-    url: https://docs.siteworks.com
+    url: https://github.com/rui202212/siteworks-api-docs.git
 
 servers:
   - url: https://api.siteworks.com/v1
@@ -215,7 +215,7 @@ paths:
 
   /materials:
     get:
-      summary: Get construction materials
+      summary: Get construction materials - material inventory
       description: Retrieve a list of materials used in construction sites.
       security:
         - BearerAuth: []
