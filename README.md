@@ -3,26 +3,16 @@
 This is a technical documentation project for the SiteWorks API, a construction management API.  
 A deployment is at [siteworks-api-docs-production.up.railway.app](https://siteworks-api-docs-production.up.railway.app/)
 
-## Project Objectives
-
-This project was created to achieve the following **learning goals**:
-
-- **Structuring and writing** complete and well-organized technical documentation
-- **Using MkDocs** to generate documentation dynamically
-- **Integrating dynamic diagrams** with **Mermaid** and **PlantUML**
-- **Documenting an API** using **Swagger (OpenAPI)**
-- etc.
-
 ## Technologies & Tools Used
 
 This project leverages the following technologies:
 
 - **[MkDocs](https://www.mkdocs.org/)** – Static site generator for project documentation
+- **[Mermaid.js](https://mermaid.js.org/)** – For real-time UML and sequence diagrams
+- **[PlantUML](https://plantuml.com/)** – For creating detailed UML diagrams including system modeling
 - **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)** – Enhanced styling and features for documentation
-- **Mermaid.js** – For real-time UML and sequence diagrams
-- **PlantUML** – For advanced system modeling
-- **Swagger (OpenAPI)** – For documenting API endpoints
-- **GitHub Pages / Railway** – For hosting the documentation
+- **[Swagger OpenAPI Specification](https://swagger.io/specification/)** – For documenting API endpoints
+- **[GitHub](https://github.com/) / [Railway](https://railway.com/)** – For hosting the documentation
 
 ## Installation & Deployment
 
@@ -102,13 +92,12 @@ After linking the GitHub repo:
 
 The following resources was used to design and implement this project :
 
-- **[MkDocs Documentation](https://www.mkdocs.org/)** – For building and structuring documentation
-- **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)** – A powerful theme for MkDocs
-- **[Mermaid.js Documentation](https://mermaid.js.org/)** – To create dynamic diagrams
+- **[Getting Started with MkDocs](https://www.mkdocs.org/getting-started/)** – To build and structure documentation
+- **[Mkdocs-Mermaid2 plugin](https://github.com/fralau/mkdocs-mermaid2-plugin)** – An MkDocs plugin that renders Mermaid text descriptions into diagrams
+- **[Mkdocs_puml Documentation](https://mikhailkravets.github.io/mkdocs_puml/)** - A package that brings PlantUML diagrams to MkDocs documentation
+- **[MkDocs Swagger UI Tag](https://github.com/blueswen/mkdocs-swagger-ui-tag)** - A MkDocs plugin supports adding Swagger UI to the page
 - **[Diagram as Code](https://diagrams.mingrammer.com/)** - To draw cloud system architecture in Python code
-- **[Swagger OpenAPI Specification](https://swagger.io/specification/)** – To document API endpoints
-- **[PlantUML Documentation](https://plantuml.com/)** – For creating detailed UML diagrams
-- \*\*[mkdocs_puml Documentation](https://mikhailkravets.github.io/mkdocs_puml/) - A package that brings PlantUML diagrams to MkDocs documentation
+- **[Markdown Syntax](https://docs.framasoft.org/fr/grav/markdown.html)** - To use markdown syntax to format text
 
 ## Contribution
 
@@ -121,7 +110,7 @@ Interested in improving the SiteWorks API documentation? Follow these steps:
    ```
 3. **Make changes and commit**:
    ```bash
-   git commit -m "Added new idea"
+   git commit -m "Add new idea"
    ```
 4. **Push your changes**:
    ```bash
@@ -137,4 +126,4 @@ This project is open-source under the **MIT License**.
 
 ---
 
-### Happy Documentation!
+### Thank you for reading!
