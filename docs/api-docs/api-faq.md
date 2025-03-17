@@ -18,7 +18,7 @@ SiteWorks API uses **OAuth 2.0 with JWT authentication**. To make a request, you
 
 ### How can I get an API key?
 
-You can request an API key by signing up on our developer portal at [https://developers.siteworks.com](https://developers.siteworks.com). Once registered, you will receive your _**client_id**_ and _**client_secret**_.
+You can request an API key by signing up on our developer portal at [https://developers.siteworks.com](https://github.com/rui202212/siteworks-api-docs). Once registered, you will receive your _**client_id**_ and _**client_secret**_.
 
 ### How do I use a JWT token in API requests?
 

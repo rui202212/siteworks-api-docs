@@ -33,4 +33,4 @@ SiteWorks API is distributed under a freemium licensing model, allowing users to
 - **Upgrading to Pro or Enterprise** unlocks additional capabilities for large-scale construction projects.  
 - All users must comply with **SiteWorks API Terms of Service**, which include fair usage policies and data protection guidelines.
 
-For more details, visit our licensing page at [www.siteworks.com/license](https://www.siteworks.com/license) or contact our sales team at [sales@siteworks.com](mailto:sales@siteworks.com).
+For more details, visit our licensing page at [www.siteworks.com/license](license.md) or contact our sales team at [sales@siteworks.com](mailto:sales@siteworks.com).
