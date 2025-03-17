@@ -98,8 +98,8 @@ When you hover the diagram few buttons appear in the top left corner:
 
 Additionally, mouse events control the zooming and panning of the diagram:
 
-- `Left Button` + `_Mouse Move_` will trigger panning of the diagram.
-- `Shift` + `_Scroll_` will trigger zooming of the diagram.
+- `Left Button` + _Mouse Move_ trigger panning of the diagram.
+- `Shift` + _Scroll_ trigger zooming of the diagram.
 
 ## Resources
 
@@ -130,8 +130,6 @@ Interested in improving the SiteWorks API documentation? Follow these steps:
    git push origin feature-name
    ```
 5. **Submit a Pull Request (PR)**
-
----
 
 ## License
 
