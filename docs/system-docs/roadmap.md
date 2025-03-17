@@ -28,10 +28,10 @@ gantt
     section Backend & API Development
     Database Design            :done, 2025-02-16, 2025-03-15
     API Core Implementation    :active, 2025-03-16, 2025-05-01
-    Security & Authentication  :active, 2025-05-02, 2025-05-15
+    Security & Authentication  :2025-05-02, 2025-05-15
 
     section Frontend & Integration
-    API Documentation          :active, 2025-05-16, 2025-05-31
+    API Documentation          :2025-05-16, 2025-05-31
     Frontend Dashboard (Admin) :2025-06-01, 2025-06-30
 
     section Testing & Quality Assurance
