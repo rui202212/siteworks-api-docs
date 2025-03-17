@@ -26,7 +26,7 @@ gantt
     Tech Stack Selection       :done, 2025-02-01, 2025-02-15
 
     section Backend & API Development
-    Database Design            :active, 2025-02-16, 2025-03-15
+    Database Design            :done, 2025-02-16, 2025-03-15
     API Core Implementation    :active, 2025-03-16, 2025-05-01
     Security & Authentication  :2025-05-02, 2025-05-15
 

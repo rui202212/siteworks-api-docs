@@ -44,9 +44,7 @@ To preview the documentation locally:
 mkdocs serve
 ```
 
-Then, open **http://127.0.0.1:8000/** in a browser.
-
----
+Then, open **http://127.0.0.1:8000/** in a browser.  
 
 ## Deploying to Railway
 
@@ -87,6 +85,21 @@ After linking the GitHub repo:
 
 3. **Get the public URL**
    - Once deployed, Railway will provide a **public URL** where the documentation is hosted
+
+## Interaction with PlantUML diagrams  
+
+When you hover the diagram few buttons appear in the top left corner:  
+
+- :material-content-copy: copies SVG content of the diagram.  
+- :material-download: downloads SVG diagram.  
+- :material-plus: zooms in the diagram.  
+- :material-home: resets the diagram to its default view.  
+- :material-minus: zooms out the diagram.  
+
+Additionally, mouse events control the zooming and panning of the diagram:  
+
+- `Left Button` + _Mouse Move_ will trigger panning of the diagram.
+- `Shift` + _Scroll_ will trigger zooming of the diagram.
 
 ## Resources
 
